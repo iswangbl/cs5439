@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="MyApp" packages="">
+   <appenders>
+       <console name="STDOUT" target="SYSTEM_OUT">
+           <PatternLayout>
+               <PatternLayout pattern="%d %p %c{1.} [%t] $${ctx:loginId} %m%n" />
+           </PatternLayout>
+       </console>
+    </appenders>
+    
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
